@@ -1,0 +1,22 @@
+<DOCTYPE html>
+	<html>
+	<head>
+		<title>MagicPix</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="magic.css">
+	</head>
+	<body>
+		<header><a href='/'>MagicPix</header></a>
+		<h1>PIX MAP</h1>
+
+		<% @images.each do |pic|%>
+
+			<a href ="<%= "/img/"+pic %>" > <img src="<%= "/img/thumbs/"+pic %>"></a>
+
+		 <% end%>
+		<a href ='/'><button type="submit" name="add">More pix!</button></a>
+		<a href ='/logout'><button type="submit" name="logout">Logout</button></a>
+
+		<footer>by @fontcuberta</footer>
+	</body>
+	</html>
